@@ -18,8 +18,8 @@ if (navigator.serviceWorker) {
  */
 function myButtonClicked () {
 
-  const counter1 = parseInt(document.getElementById('integer1').value)
-	const counter2 = parseInt(document.getElementById('integer2').value)
+  const counter1 = parseInt(document.getElementById("integer1").value)
+	const counter2 = parseInt(document.getElementById("integer2").value)
   var addedNumber = 0
   var result = 0
 
@@ -45,5 +45,5 @@ function myButtonClicked () {
     }
   }
   
-  document.getElementById('answers').innerHTML = counter1 + " x " + addedNumber + " = " + result;
+  document.getElementById("answers").innerHTML = counter1 + " x " + addedNumber + " = " + result;
 }
