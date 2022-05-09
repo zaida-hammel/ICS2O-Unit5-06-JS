@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!-- ICS2O-UnitX-YY-HTML-... -->
 <html lang="en-ca">
-  head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="My first Slider" />
@@ -31,19 +31,36 @@
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
       <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
-          <span class="mdl-layout-title">Webpage header text here</span>
+          <span class="mdl-layout-title">Multiplication, with JS</span>
         </div>
       </header>
       <main class="mdl-layout__content">
+        <!-- Numeric Textfield -->
+        <form action="#">
+          <div class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="integer1">
+            <label class="mdl-textfield__label" for="integer1">integer...</label>
+            <span class="mdl-textfield__error">Input is not a number!</span>
+          </div>
+        </form>
+        <br>
+        <!-- Numeric Textfield -->
+        <form action="#">
+          <div class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="integer2">
+            <label class="mdl-textfield__label" for="integer2">integer...</label>
+            <span class="mdl-textfield__error">Input is not a number!</span>
+          </div>
+        </form>
+        <br>
         <!-- Raised button with ripple -->
         <button
           class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
           onclick="myButtonClicked()"
         >
-          Click here
+          calculate
         </button>
-        <!-- basic text -->
-        <div id="hello-world"></div>
+        <div id="answers"></div>
       </main>
     </div>
   </body>

@@ -16,3 +16,34 @@ if (navigator.serviceWorker) {
 /**
  * This function does multiplication.
  */
+function myButtonClicked () {
+
+  const counter1 = parseInt(document.getElementById('integer1').value)
+	const counter2 = parseInt(document.getElementById('integer2').value)
+  var addedNumber = 0
+  var result = 0
+
+  if (counter1 > 0 && counter2 > 0) {
+    while (addedNumber < counter2) {
+      addedNumber = addedNumber + 1;
+      result = result + counter1;
+    }
+  } else if (counter1 < 0 && counter2 < 0) {
+    while (addedNumber > counter2) {
+      addedNumber = addedNumber - 1;
+      result = result - counter1;
+    }
+  } else if (counter1 > 0 && counter2 < 0) {
+    while (addedNumber > counter2) {
+      addedNumber = addedNumber - 1;
+      result = result - counter1;
+    }
+  } else {
+    while (addedNumber < counter2) {
+      addedNumber = addedNumber + 1;
+      result = result + counter1;
+    }
+  }
+  
+  document.getElementById('answers').innerHTML = counter1 + " x " + addedNumber + " = " + result;
+}
